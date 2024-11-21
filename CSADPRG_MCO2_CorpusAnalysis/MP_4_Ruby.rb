@@ -1,6 +1,6 @@
-# # Made by: BALINGIT, Andrei Luis
-# # For CSADPROG MCO2
-# # Corpus Analysis 
+# Made by: BALINGIT, Andrei Luis
+# For CSADPROG MCO2
+# Corpus Analysis 
 
 require 'csv'
 
