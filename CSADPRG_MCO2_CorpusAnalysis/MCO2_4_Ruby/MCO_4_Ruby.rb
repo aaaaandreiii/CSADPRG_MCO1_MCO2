@@ -173,6 +173,23 @@ def create_bar_chart(posts_per_month)
   bar_chart.write('Ruby_posts_per_month.png')
 end
 
+# def create_bar_chart(posts_per_month)
+#   bar_chart = Gruff::Bar.new(width: 1000)
+#   bar_chart.title = 'Posts Per Month'
+
+#   months = posts_per_month.keys.sort
+#   values = months.map { |month| posts_per_month[month] }
+
+#   # Rotate labels by 45 degrees
+#   # bar_chart.x_axis_label_rotate = 45
+#   # bar_chart.font = { :angle => 45 }
+
+
+#   bar_chart.labels = months.each_with_index.map { |month, index| [index, month] }.to_h
+#   bar_chart.data('Posts', values)
+#   bar_chart.write('Ruby_posts_per_month.png')
+# end
+
 def create_pie_chart(symbol_counts)
   pie_chart = Gruff::Pie.new
   
