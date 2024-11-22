@@ -1,6 +1,6 @@
-# Made by: BALINGIT, Andrei Luis
-# For CSADPROG MCO2
-# Corpus Analysis 
+#Last Names: Avelino, Balingit, Liong, Wong
+#Language: Ruby
+#Paradigms: Imperative, Structured, Concurrent
 
 require 'csv'
 

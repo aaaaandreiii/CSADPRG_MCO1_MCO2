@@ -1,3 +1,7 @@
+#Last Names: Avelino, Balingit, Liong, Wong
+#Language: R
+#Paradigms: Imperative, Structured, Concurrent
+
 get_numeric_input <- function(prompt) {
   repeat {
     print(prompt)

@@ -1,6 +1,6 @@
-# Made by: BALINGIT, Andrei Luis
-# For CSADPROG MCO1
-# Simple Loan Calculator
+#Last Names: Avelino, Balingit, Liong, Wong
+#Language: Ruby
+#Paradigms: Imperative, Structured, Concurrent
 
 require 'bigdecimal'
 
