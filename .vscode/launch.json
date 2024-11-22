@@ -1,0 +1,40 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "rdbg",
+            "name": "Debug current file with rdbg",
+            "request": "launch",
+            "script": "${file}",
+            "args": [],
+            "askParameters": true
+        },
+        // {
+        //     "type": "rdbg",
+        //     "name": "Attach with rdbg",
+        //     "request": "attach"
+        // },
+        {
+            "type": "node",  
+            "name": "Debug Ruby File",
+            "request": "launch",
+            "program": "${file}",
+            "args": []
+        },
+        {
+            "type": "java",
+            "name": "Debug current Kotlin file",
+            "request": "launch",
+            "mainClass": "main",
+            "args": [],
+            "projectName": "MP_4_Kotlin" 
+        },
+        {
+            "type": "go",
+            "name": "Debug current Go file",
+            "request": "launch",
+            "program": "${file}",
+            "args": []
+        }
+    ]
+}
