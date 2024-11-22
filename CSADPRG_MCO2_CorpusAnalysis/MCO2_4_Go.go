@@ -58,13 +58,6 @@ func isStopWord(word string, stopWords map[string]bool) bool {
 	return exists
 }
 
-func lowercaseFirstChar(s string) string {
-	if len(s) == 0 {
-		return s
-	}
-	return string(unicode.ToLower(rune(s[0]))) + s[1:]
-}
-
 func main() {
 	var count int
 	var Unique []string
@@ -131,18 +124,16 @@ func main() {
 			if i%5 == 3 {
 				for j := range split {
 					word := strings.ToLower(split[j])
-					word = lowercaseFirstChar(word) //makes sure all is lowercase
 					count++
 					if isStopWord(word, stopWords) {
 						stopWordCount[word]++
+					}
+					if search(Unique, word) == -1 {
+						Unique = append(Unique, word)
+						nUnique++
+						freqCount[word] = 1
 					} else {
-						if search(Unique, word) == -1 {
-							Unique = append(Unique, word)
-							nUnique++
-							freqCount[word] = 1
-						} else {
-							freqCount[word]++
-						}
+						freqCount[word]++
 					}
 
 					charsplit := []rune(word)

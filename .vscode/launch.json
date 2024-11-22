@@ -1,7 +1,10 @@
 {
+<<<<<<< HEAD
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+=======
+>>>>>>> e04e4d7a0865b4ebb2ff8028ea55686d7c240f93
     "version": "0.2.0",
     "configurations": [
         {
@@ -13,9 +16,36 @@
             "askParameters": true
         },
         {
+<<<<<<< HEAD
             "type": "rdbg",
             "name": "Attach with rdbg",
             "request": "attach"
         }
     ]
 }
+=======
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": ["<node_internals>/**"],
+            "program": "${workspaceFolder}/app.js",
+            "runtimeExecutable": "C:\\Program Files\\nodejs\\node.exe"
+        },
+        {
+            "type": "java",
+            "name": "Debug current Kotlin file",
+            "request": "launch",
+            "mainClass": "main",
+            "args": [],
+            "projectName": "MP_4_Kotlin" 
+        },
+        {
+            "type": "go",
+            "name": "Debug current Go file",
+            "request": "launch",
+            "program": "${file}",
+            "args": []
+        }
+    ]
+}
+>>>>>>> e04e4d7a0865b4ebb2ff8028ea55686d7c240f93
