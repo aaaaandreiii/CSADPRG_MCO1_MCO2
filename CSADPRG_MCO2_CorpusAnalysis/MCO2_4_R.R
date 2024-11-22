@@ -1,6 +1,13 @@
-#Last Names: Avelino, Balingit, Liong, Wong
-#Language: R
-#Paradigms: Imperative, Structured, Concurrent
+###########################
+# Last names:
+# 	Avelino
+# 	Balingit
+# 	Liong
+# 	Wong
+#
+# Language: R
+# Paradigms: Paradigms: Functional, Procedural, Object-Oriented
+##########################
 
 library(dplyr)
 library(stringr)
@@ -37,11 +44,11 @@ print(paste("Total Word Count:", total_words))
 print(paste("Vocabulary Size:", unique_words))
 
 print("Word Frequency (Sorted):")
-  #print(head(word_freq_sorted, 10)) 
+#print(head(word_freq_sorted, 10)) 
 print(word_freq_sorted)
 
 print("Character Frequency (Sorted):")
-  #print(head(char_freq_sorted, 10)) 
+#print(head(char_freq_sorted, 10)) 
 print(char_freq_sorted)
 
 print("Top 20 Most Frequent Words:")
@@ -68,7 +75,7 @@ print("Bar chart saved as 'barchart.png'")
 
 
 #symbol freq
-symbols <- unlist(str_extract_all(corpus, "[^a-zA-Z0-9\\s]"))
+symbols <- unlist(str_extract_all(corpus, "[^a-zA-Z0-9]"))
 if (length(symbols) > 0) {
   symbol_freq <- table(symbols)
   symbol_data <- data.frame(symbol = names(symbol_freq), freq = as.numeric(symbol_freq))
