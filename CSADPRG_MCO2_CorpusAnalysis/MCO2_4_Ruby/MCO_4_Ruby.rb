@@ -163,32 +163,19 @@ def create_word_cloud(top_words)
 end
 
 def create_bar_chart(posts_per_month)
-  bar_chart = Gruff::Bar.new
+  bar_chart = Gruff::Bar.new(1000)
   bar_chart.title = 'Posts Per Month'
   months = posts_per_month.keys.sort
   values = months.map { |month| posts_per_month[month] }
 
   bar_chart.labels = months.each_with_index.map { |month, index| [index, month] }.to_h
   bar_chart.data('Posts', values)
+  
+  # Rotate labels by 45 degrees
+  bar_chart.marker_font_size = 8.5  # Adjust font size for better appearance
+  bar_chart.legend_box_size = 10  # Optional adjustment for legend
   bar_chart.write('Ruby_posts_per_month.png')
 end
-
-# def create_bar_chart(posts_per_month)
-#   bar_chart = Gruff::Bar.new(width: 1000)
-#   bar_chart.title = 'Posts Per Month'
-
-#   months = posts_per_month.keys.sort
-#   values = months.map { |month| posts_per_month[month] }
-
-#   # Rotate labels by 45 degrees
-#   # bar_chart.x_axis_label_rotate = 45
-#   # bar_chart.font = { :angle => 45 }
-
-
-#   bar_chart.labels = months.each_with_index.map { |month, index| [index, month] }.to_h
-#   bar_chart.data('Posts', values)
-#   bar_chart.write('Ruby_posts_per_month.png')
-# end
 
 def create_pie_chart(symbol_counts)
   pie_chart = Gruff::Pie.new
