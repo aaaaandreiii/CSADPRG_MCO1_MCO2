@@ -1,6 +1,13 @@
-#Last Names: Avelino, Balingit, Liong, Wong
-#Language: R
-#Paradigms: Imperative, Structured, Concurrent
+###########################
+# Last names:
+# 	Avelino
+# 	Balingit
+# 	Liong
+# 	Wong
+#
+# Language: R
+# Paradigms: Paradigms: Functional, Procedural, Object-Oriented
+##########################
 
 library(dplyr)
 library(stringr)
