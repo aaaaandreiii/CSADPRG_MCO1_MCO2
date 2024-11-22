@@ -9,17 +9,13 @@
             "args": [],
             "askParameters": true
         },
-        // {
-        //     "type": "rdbg",
-        //     "name": "Attach with rdbg",
-        //     "request": "attach"
-        // },
         {
-            "type": "node",  
-            "name": "Debug Ruby File",
+            "type": "node",
             "request": "launch",
-            "program": "${file}",
-            "args": []
+            "name": "Launch Program",
+            "skipFiles": ["<node_internals>/**"],
+            "program": "${workspaceFolder}/app.js",
+            "runtimeExecutable": "C:\\Program Files\\nodejs\\node.exe"
         },
         {
             "type": "java",
