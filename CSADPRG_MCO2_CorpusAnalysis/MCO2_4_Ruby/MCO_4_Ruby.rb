@@ -10,7 +10,7 @@
 ##########################
 
 # For CSADPROG MCO2
-# Corpus Analysis 
+# Corpus Analysis
 
 require 'csv'
 require 'rmagick'
