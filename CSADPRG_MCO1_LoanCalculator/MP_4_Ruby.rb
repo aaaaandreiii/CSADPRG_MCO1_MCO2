@@ -1,3 +1,14 @@
+###########################
+# Last names:
+# 	Avelino
+# 	Balingit
+# 	Liong
+# 	Wong
+#
+# Language: Ruby
+# Paradigms: functional, imperative, object-oriented, reflective
+##########################
+
 # Made by: BALINGIT, Andrei Luis
 # For CSADPROG MCO1
 # Simple Loan Calculator

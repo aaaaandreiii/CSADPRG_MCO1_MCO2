@@ -1,3 +1,14 @@
+###########################
+# Last names:
+# 	Avelino
+# 	Balingit
+# 	Liong
+# 	Wong
+#
+# Language: R
+# Paradigm(s): Functional, Procedural
+##########################
+
 get_numeric_input <- function(prompt) {
   repeat {
     print(prompt)
